@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 html {
   block-size: 100%;
 }
@@ -170,19 +189,16 @@ html {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  /* gap: 26px; */
-  gap: 30px;
+  gap: 26px;
 }
 
 .title {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 75px;
   line-height: 94%;
   letter-spacing: 0;
   text-transform: uppercase;
-  height: 210px;
 }
 
 .content__accent {
@@ -190,11 +206,10 @@ html {
 }
 
 .content__list-container {
-  overflow-x: hidden;
+  overflow-y: scroll;
   height: 298px;
   position: relative;
 }
-
 
 .content__list {
   display: flex;
@@ -257,7 +272,7 @@ html {
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-bottom: 6px;
-  color: #fff
+  color: #fff;
 }
 
 .content__video-card-description {
@@ -271,7 +286,7 @@ html {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  color: #fff
+  color: #fff;
 }
 
 .content__video-card-thumbnail {
@@ -290,18 +305,16 @@ html {
   background-color: transparent;
   cursor: pointer;
   appearance: none;
+  height: 34px;
 }
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   align-self: end;
 }
 
 .more-button {
   width: 100%;
-  height: 34px;
-  margin-top: 30px;
 }
 
 .button:hover {
@@ -319,33 +332,6 @@ html {
 .button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
-}
-
-.preloader {
-  display: none;
-}
-
-.preloader.active {
-  display: flex;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
 }
 
 /* Кастомный скроллбар */
