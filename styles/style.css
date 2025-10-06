@@ -188,8 +188,9 @@ html {
   grid-area: details;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-  gap: 26px;
+  gap: 30px;
+  overflow-x: hidden;
+  width: 401px;
 }
 
 .title {
@@ -315,6 +316,7 @@ html {
 
 .more-button {
   width: 100%;
+  margin-top: 30px;
 }
 
 .button:hover {
