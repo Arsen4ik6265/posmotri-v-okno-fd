@@ -241,7 +241,7 @@
     seekClip(keepPlaying);
     renderList();
   }
-  form.addEventListener('submit', e=>{e.preventDefault();
+form.addEventListener('submit', e=>{e.preventDefault();applyFilters();});
   playButton.addEventListener('click',()=>{
     if(hasError){return;}
     if(!fileLoaded){tip.textContent='Загружается видеофайл…';return;}
