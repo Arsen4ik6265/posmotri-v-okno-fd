@@ -241,9 +241,7 @@
     seekClip(keepPlaying);
     renderList();
   }
-  form.addEventListener('submit', e=>{e.preventDefault();applyFilters();});
-  citySelect.addEventListener('change',applyFilters);
-  timeInputs.forEach(el=>el.addEventListener('change',applyFilters));
+  form.addEventListener('submit', e=>{e.preventDefault();
   playButton.addEventListener('click',()=>{
     if(hasError){return;}
     if(!fileLoaded){tip.textContent='Загружается видеофайл…';return;}
